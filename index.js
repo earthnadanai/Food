@@ -1,7 +1,10 @@
 const express = require('express');
 const hbs = require('express-handlebars');
-const restaurantRouter = require('./routes/restaurant');
 const path = require('path');
+const PORT = process.env.PORT || 3000;
+
+const restaurantRouter = require('./routes/restaurant');
+const indexRouter = require('./routes/index');
 //creater Server
 const app = express();
 /*app.get('/',(req,res) => {
